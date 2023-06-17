@@ -17,6 +17,8 @@ If any mod you have uses these files, change the values in it instead of using t
 
 Caller IDs for all factions:
 
-<p align="center"><img src="https://github.com/begin-theadventure/N-EnableFactionIDCards/assets/99835765/e2351a23-216b-4b64-89bc-e90bf7a35e36" align="center" width="80%"></p>
+<p align="center"><img src="https://github.com/NachosChipeados/N-EnableFactionIDCards/assets/99835765/e2351a23-216b-4b64-89bc-e90bf7a35e36" align="center" width="80%"></p>
 
 All numbers are documented [on GitHub](https://gist.github.com/begin-theadventure/d35f8602dd15762bf2e8648728272ca5).
+
+Thanks to `begin-theadventure` for creating this description for me.

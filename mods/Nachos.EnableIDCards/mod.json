@@ -1,0 +1,6 @@
+{
+    "Name": "Nachos.EnableIDCards",
+	"Description": "-Enables ID cards for all factions.\ncl_conversation.gnut: line 96, caller_id_number 01-36 - changes the banner on the ID Card.\ncl_faction_dialogue.gnut: line 250 & 256 return changed to true - enables the ID Card.\nConflicts with mods using these files.",
+	"Version": "1.0.1",
+	"LoadPriority": 5
+}
