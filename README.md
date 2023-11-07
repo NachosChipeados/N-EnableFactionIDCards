@@ -1,4 +1,4 @@
-# <p align="center">Nachos.EnableFactionIDCards</p>
+# <p align="center">[Nachos.EnableFactionIDCards](https://northstar.thunderstore.io/package/NachosChipeados/EnableFactionIDCards)</p>
 <p align="center">Enables ID cards for all factions.</p>
 
 ID/waveform/voice cards.
