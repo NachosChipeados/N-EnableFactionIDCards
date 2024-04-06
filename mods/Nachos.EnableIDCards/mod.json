@@ -1,6 +1,6 @@
 {
     "Name": "Nachos.EnableIDCards",
 	"Description": "-Enables ID cards for all factions.",
-	"Version": "1.0.3",
+	"Version": "1.0.4",
 	"LoadPriority": 5
 }
