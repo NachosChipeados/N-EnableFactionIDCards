@@ -1,7 +1,7 @@
 # <p align="center">Nachos.EnableFactionIDCards</p>
 <p align="center">Enables ID Cards for all factions.</p>
 
-This mod activates faction [ID Cards](https://titanfall.fandom.com/wiki/Category:ID_Cards) (from singleplayer) in multiplayer.
+This mod activates faction [ID Cards](https://titanfall.fandom.com/wiki/Category:ID_Cards) from singleplayer in multiplayer.
 
 In [`cl_faction_dialogue.gnut`](https://github.com/Syampuuh/Titanfall2/blob/master/scripts/vscripts/conversation/cl_faction_dialogue.gnut#L250), `return` is changed to `true` on 250 and 256 lines, and in [`cl_conversation.gnut`](https://github.com/NachosChipeados/N-EnableFactionIDCards/blob/main/mods/Nachos.EnableIDCards/mod/scripts/vscripts/conversation/cl_conversation.gnut#L1580), `callerIDs` are used for specifying which cards should be used.
 
