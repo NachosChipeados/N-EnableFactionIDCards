@@ -1610,7 +1610,6 @@ void function PlayAnnouncerLineThroughDeathWithPriority_internal( string soundAl
 	{
 		rui = CreateWaveform( waveformName, TEAM_MILITIA, 10.0 )
 	}
-	}
 	OnThreadEnd(
 	function() : ( rui, soundAlias, localClientPlayer )
 		{
