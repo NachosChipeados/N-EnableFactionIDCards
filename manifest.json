@@ -1,6 +1,6 @@
 {
   "name": "EnableFactionIDCards",
-  "version_number": "1.0.1",
+  "version_number": "1.0.3",
   "website_url": "https://github.com/NachosChipeados/N-EnableFactionIDCards",
   "dependencies": [],
   "description": "Enables ID cards for all factions."
