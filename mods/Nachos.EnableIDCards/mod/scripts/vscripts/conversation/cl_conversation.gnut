@@ -1569,11 +1569,48 @@ void function PlayAnnouncerLineThroughDeathWithPriority_internal( string soundAl
 	clGlobal.levelEnt.EndSignal( "CancelConversation" )
 
 	var rui
+	print("=============\n" + waveformName + "\n=============")
+
+	if(GameRules_GetGameMode() == "fd"){
+		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_10"
+		rui = CreateWaveform( "DAVIS & DROZ", TEAM_MILITIA, 10.0 )
+	}
+	else{
+
+	
+	if(waveformName == "#FACTION_LEADER_NAME_SARAH")
+	{
+		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_20"
+	}
+	if(waveformName == "#FACTION_LEADER_NAME_MRVN")
+	{
+		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_36"
+	}
+	if(waveformName == "#FACTION_LEADER_NAME_MARDER")
+	{
+		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_11"
+	}
+	if(waveformName == "#FACTION_LEADER_NAME_GATES")
+	{
+		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_13"
+	}
+	if(waveformName == "#FACTION_LEADER_NAME_BARKER")
+	{
+		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_07"
+	}
+	if(waveformName == "#FACTION_LEADER_NAME_ASH")
+	{
+		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_06"
+	}
+	if(waveformName == "#FACTION_LEADER_NAME_BLISK")
+	{
+		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_05"
+	}
 	if ( waveformName != "" )
 	{
 		rui = CreateWaveform( waveformName, TEAM_MILITIA, 10.0 )
 	}
-
+	}
 	OnThreadEnd(
 	function() : ( rui, soundAlias, localClientPlayer )
 		{
