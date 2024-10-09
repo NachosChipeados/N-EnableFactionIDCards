@@ -1,6 +1,28 @@
 {
     "Name": "Nachos.EnableIDCards",
-	"Description": "-Enables ID cards for all factions.",
-	"Version": "1.0.4",
-	"LoadPriority": 5
+	"Description": "Enables ID cards for all factions.",
+	"Version": "1.1.0",
+	"LoadPriority": 5,
+	"Scripts": [
+		{
+			"Path": "IDCard_Settings.nut",
+			"RunOn": "UI",
+			"UICallback": {
+				"Before": "IDCardSettings_Init"
+			}
+		}
+	],
+	"ConVars":
+	[
+		{
+			"Name": "IDCard.Intercept",
+			"DefaultValue": "0",
+			"Flags": 16777216
+		},
+		{
+			"Name": "IDCard.Position",
+			"DefaultValue": "0",
+			"Flags": 16777216
+		}
+	]
 }
