@@ -1,3 +1,8 @@
+1.1.0: Added customization options
+
+Fixed ID card instantly disappearing when the voicelines end
+
+----
 1.0.5: README and CHANGELOG @[begin-theadventure](https://github.com/NachosChipeados/N-EnableFactionIDCards/pull/8)
 
 ----
