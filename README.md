@@ -5,7 +5,7 @@ This mod activates faction [ID Cards](https://titanfall.fandom.com/wiki/Category
 
 In [`cl_faction_dialogue.gnut`](https://github.com/Syampuuh/Titanfall2/blob/master/scripts/vscripts/conversation/cl_faction_dialogue.gnut#L250), `return` is changed to `true` on lines 250 and 256, and in [`cl_conversation.gnut`](https://github.com/NachosChipeados/N-EnableFactionIDCards/blob/main/mods/Nachos.EnableIDCards/mod/scripts/vscripts/conversation/cl_conversation.gnut#L1580), `callerIDs` are used for specifying which cards should be used.
 
-In Frontier Defense, the card is changed to Dross by default, but it can also be changed to Davis by modifying [`caller_id_12`](https://github.com/NachosChipeados/N-EnableFactionIDCards/blob/main/mods/Nachos.EnableIDCards/mod/scripts/vscripts/conversation/cl_conversation.gnut#L1575) to `10`.
+In Frontier Defense, the card is changed to Droz by default, but it can also be changed to Davis by modifying [`caller_id_12`](https://github.com/NachosChipeados/N-EnableFactionIDCards/blob/main/mods/Nachos.EnableIDCards/mod/scripts/vscripts/conversation/cl_conversation.gnut#L1575) to `10`.
 
 If you have any other mod that uses one or both of these files, you will have to copy these changes to those files.
 
