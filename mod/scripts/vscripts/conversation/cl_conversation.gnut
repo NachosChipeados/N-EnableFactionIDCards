@@ -1589,7 +1589,7 @@ void function PlayAnnouncerLineThroughDeathWithPriority_internal( string soundAl
 
 	float duration = GetSoundDuration( soundAlias )
 
-	if (GameRules_GetGameMode() == "fd")
+	if ( GameRules_GetGameMode() == "fd" )
 	{
 		if ( !GetConVarBool( "IDCard.Use_Davis" ) )
 			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_12" //DROZ
@@ -1600,31 +1600,31 @@ void function PlayAnnouncerLineThroughDeathWithPriority_internal( string soundAl
 	}
 	else
 	{
-		if (waveformName == "#FACTION_LEADER_NAME_SARAH")
+		if ( waveformName == "#FACTION_LEADER_NAME_SARAH" )
 		{
 			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_20"
 		}
-		else if (waveformName == "#FACTION_LEADER_NAME_BLISK")
+		else if ( waveformName == "#FACTION_LEADER_NAME_BLISK" )
 		{
 			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_05"
 		}
-		else if (waveformName == "#FACTION_LEADER_NAME_ASH")
+		else if ( waveformName == "#FACTION_LEADER_NAME_ASH" )
 		{
 			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_06"
 		}
-		else if (waveformName == "#FACTION_LEADER_NAME_BARKER")
+		else if ( waveformName == "#FACTION_LEADER_NAME_BARKER" )
 		{
 			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_07"
 		}
-		else if (waveformName == "#FACTION_LEADER_NAME_GATES")
+		else if ( waveformName == "#FACTION_LEADER_NAME_GATES" )
 		{
 			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_13"
 		}
-		else if (waveformName == "#FACTION_LEADER_NAME_MARDER")
+		else if ( waveformName == "#FACTION_LEADER_NAME_MARDER" )
 		{
 			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_11"
 		}
-		else if (waveformName == "#FACTION_LEADER_NAME_MRVN")
+		else if ( waveformName == "#FACTION_LEADER_NAME_MRVN" )
 		{
 			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_36"
 		}
