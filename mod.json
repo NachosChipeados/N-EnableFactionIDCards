@@ -1,7 +1,7 @@
 {
     "Name": "Nachos.EnableIDCards",
 	"Description": "Enables ID cards for all factions.",
-	"Version": "1.1.0",
+	"Version": "1.2.0",
 	"LoadPriority": 5,
 	"Scripts": [
 		{
@@ -23,6 +23,14 @@
 			"Name": "IDCard.Position",
 			"DefaultValue": "0",
 			"Flags": 16777216
+		},
+		{
+			"Name": "IDCard.Use_Davis",
+			"DefaultValue": "0",
+			"Flags": 16777216
 		}
-	]
+	],
+	"Dependencies": {
+		"IDCARD_HAS_OS_RESTORATION": "OS Restoration"
+	}
 }

@@ -25,6 +25,10 @@ global function ResetSquadConversationDebounceTimers
 global function PlayOneLinerConversationOnEntWithPriority //R2 MP style dialogue ( one liner, sound alias needs to be dynamically generated on the client ) should use this function
 global function PlayAnnouncerLineThroughDeathWithPriority //Faction Leader announcers are an exception since sometimes they need to persist through death ( e.g. win announcement shouldn't cancel when you die )
 
+#if IDCARD_HAS_OS_RESTORATION
+global function PlayOneLinerConversationOnEntWithPriority_internal
+#endif
+
 /*
 	ServerCallback_PlayConversation( conversationType, priority )
 */
@@ -464,6 +468,10 @@ void function CancelConversation( entity speakingEnt )
 
 function AbortConversationDueToPriority( priority )
 {
+#if IDCARD_HAS_OS_RESTORATION
+	print ("The current conversation priority is " + level.CurrentPriority + " and the incoming line priority is " + priority)
+#endif
+
 	// will return true if the conversation should not play
 	if ( priority > level.CurrentPriority )
 		return false
@@ -1575,14 +1583,20 @@ void function PlayAnnouncerLineThroughDeathWithPriority_internal( string soundAl
 	clGlobal.levelEnt.EndSignal( "CancelConversation" )
 
 	var rui
-	print("=============\n" + waveformName + "\n=============")
+	printt( "=============" )
+	printt( waveformName )
+	printt( "=============" )
 
 	float duration = GetSoundDuration( soundAlias )
 
 	if (GameRules_GetGameMode() == "fd")
 	{
-		file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_12"
-		rui = CreateWaveform( "#FD_FACTION_NAME", TEAM_MILITIA, duration ) //DAVIS & DROSS
+		if ( !GetConVarBool( "IDCard.Use_Davis" ) )
+			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_12" //DROZ
+		else
+			file.callerIDs[ "default" ] <- $"rui/hud/caller_ids/caller_id_10" //DAVIS
+
+		rui = CreateWaveform( "#FD_FACTION_NAME", TEAM_MILITIA, duration )
 	}
 	else
 	{

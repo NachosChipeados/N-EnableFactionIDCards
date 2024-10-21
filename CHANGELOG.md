@@ -1,3 +1,8 @@
+1.2.0: Fixed crash when using "OS Restoration"
+
+Added option to change Frontier Defense's ID card from Droz, to Davis
+
+----
 1.1.0: Added customization options
 
 Fixed ID card instantly disappearing when the voicelines end
