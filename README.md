@@ -7,7 +7,7 @@ In [`cl_faction_dialogue.gnut`](https://github.com/Syampuuh/Titanfall2/blob/mast
 
 In Frontier Defense, the card is changed to Droz by default, but it can also be changed to Davis via the modsetting menu.
 
-If you have any other mod that uses one or both of these files, you will have to copy these changes to those files. Note: As of `v1.2.0`, its no longer neccesary to do this if using OS Restoration.
+If you have any other mod that uses one or both of these files, you will have to copy these changes to those files. Note: As of `v1.2.0`, its no longer necessary to do this if using OS Restoration.
 
 ---
 
