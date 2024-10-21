@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Upload Thunderstore Package
-        uses: NachosChipeados/upload-thunderstore-package@v3.1
+        uses: NachosChipeados/upload-thunderstore-package
         with:
           community: northstar
           # Name of the team to publish the mod under
