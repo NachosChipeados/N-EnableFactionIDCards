@@ -24,10 +24,7 @@ global function ResetSquadConversationDebounceTimers
 
 global function PlayOneLinerConversationOnEntWithPriority //R2 MP style dialogue ( one liner, sound alias needs to be dynamically generated on the client ) should use this function
 global function PlayAnnouncerLineThroughDeathWithPriority //Faction Leader announcers are an exception since sometimes they need to persist through death ( e.g. win announcement shouldn't cancel when you die )
-
-#if IDCARD_HAS_OS_RESTORATION
 global function PlayOneLinerConversationOnEntWithPriority_internal
-#endif
 
 /*
 	ServerCallback_PlayConversation( conversationType, priority )
@@ -1477,7 +1474,9 @@ var function CreateWaveform( string title, int team, float duration, entity spea
 		RuiTrackFloat3( waveformRUI, "connectingLineWorldPos", speaker, RUI_TRACK_POINT_FOLLOW, attachment )
 	}
 
-	printt( "RUI TRACKING SOUND METER!" )
+	if ( GetConVarBool( "IDCard.Print" ) )
+		printt( "RUI TRACKING SOUND METER!" )
+
 	RuiTrackFloat( waveformRUI, "level", null, RUI_TRACK_SOUND_METER, 0 )
 
 	file.waveformRUI = waveformRUI
@@ -1583,9 +1582,13 @@ void function PlayAnnouncerLineThroughDeathWithPriority_internal( string soundAl
 	clGlobal.levelEnt.EndSignal( "CancelConversation" )
 
 	var rui
-	printt( "=============" )
-	printt( waveformName )
-	printt( "=============" )
+
+	if ( GetConVarBool( "IDCard.Print" ) )
+	{
+		printt( "=============" )
+		printt( waveformName )
+		printt( "=============" )
+	}
 
 	float duration = GetSoundDuration( soundAlias )
 
