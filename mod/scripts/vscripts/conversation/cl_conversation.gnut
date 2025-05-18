@@ -465,9 +465,8 @@ void function CancelConversation( entity speakingEnt )
 
 function AbortConversationDueToPriority( priority )
 {
-#if IDCARD_HAS_OS_RESTORATION
-	print ("The current conversation priority is " + level.CurrentPriority + " and the incoming line priority is " + priority)
-#endif
+	if ( GetConVarBool( "IDCard.Print" )
+		print ("The current conversation priority is " + level.CurrentPriority + " and the incoming line priority is " + priority)
 
 	// will return true if the conversation should not play
 	if ( priority > level.CurrentPriority )
