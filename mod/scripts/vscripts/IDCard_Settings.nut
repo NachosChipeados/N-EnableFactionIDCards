@@ -6,5 +6,6 @@ void function IDCardSettings_Init()
 	ModSettings_AddModCategory("General")
 	ModSettings_AddEnumSetting("IDCard.Intercept", "Enable \"Intercepting Transmision\" Label", [ "#SETTING_OFF", "#SETTING_ON" ])
 	ModSettings_AddEnumSetting("IDCard.Position", "Enable Singleplayer Position", [ "#SETTING_OFF", "#SETTING_ON" ])
+	ModSettings_AddEnumSetting("IDCard.Frontier_Defense", "Use the Frontier Defense ID Card Outside of FD", [ "#SETTING_OFF", "#SETTING_ON" ])
 	ModSettings_AddEnumSetting("IDCard.Use_Davis", "Use Davis in Frontier Defense ID Card", [ "#SETTING_OFF", "#SETTING_ON" ])
 }
